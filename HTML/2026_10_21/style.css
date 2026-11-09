@@ -1,0 +1,132 @@
+/* CSS comments */
+
+/* Selector by values */
+/* 
+h1 {
+  color: green;
+}
+
+p {
+  color: blue;
+}
+
+.parragraph {
+  color: blueviolet;
+}
+ */
+/* Selector by ID */
+/* 
+#lastpar {
+  color: brown;
+} */
+
+/* Universal selection, in other words it changes the general CSS overview of the code(document) */
+
+/* * {
+  color: gold;
+} */
+
+/* Specifications */
+
+/*(!)important is a redundant atribute but it makes the CSS setting compulsory to the atribute value */
+/* 
+h2 {
+  color: red !important;
+} */
+/* The CSS goes from top to bottom, i.e: h2 gets overridden by value below */
+/* .test {
+  color: blue;
+} */
+
+/* The CSS goes from top to bottom, i.e: .test gets overridden by value below */
+
+/* #test {
+  color: black;
+} */
+
+/*  Trial runs */
+/* 
+header > h1 {
+  color: orange;
+}
+
+p {
+  color: red;
+} */
+
+/* No entiendo porque sigue teniendo más peso el CSS superior de los ID y los valores */
+
+/* main > ul > li > p {
+  color: black;
+} */
+
+/* Testing all in an actual application, commenting above for use */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: rgb(32, 32, 32);
+  color: aliceblue;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+main {
+  height:80vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > ul {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 3px azure dashed;
+    border-radius: 15px;
+    transition: 0.8s;
+}
+
+main > ul :hover {
+    background-color: green;
+    color: burlywood;
+}
+
+footer {
+    height: 20vh;
+    padding: 20px;
+    display: flex;
+    justify-content: flex;
+    align-content: center;
+}
+
+footer > p {
+    text-align: justify;
+}
